@@ -78,60 +78,199 @@
         </div>
     </div>
 
-    <!-- Konten lainnya tetap sama seperti sebelumnya -->
-    <!-- ... -->
+    <!-- Hero Section -->
+    <section id="home" class="py-20 px-6 bg-gradient-to-b from-black to-secondary">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Selamat Datang di Channel YouTube Afynn Official</h1>
+                <p class="text-lg mb-6">Gudang Pixellab Mod, Modified APK Dan Tutorial Editing</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="https://www.youtube.com/@AfynnOfficial" target="_blank" class="bg-primary hover:bg-red-700 text-white px-6 py-3 rounded-lg font-medium transition flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                        Subscribe
+                    </a>
+                    <a href="https://youtu.be/wo_79qRR0mE?si=p2KBD-u-iaH55Srl" class="bg-white hover:bg-gray-200 text-black px-6 py-3 rounded-lg font-medium transition flex items-center justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        Tonton Video
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-full max-w-md">
+                    <div class="absolute -top-6 -left-6 w-full h-full border-4 border-primary rounded-xl"></div>
+                    <img src="Banner Youtube.png" alt="Banner Channel" class="relative w-full rounded-xl z-10">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script>
-        // Mobile Menu Functionality
-        const mobileMenuButton = document.getElementById('mobileMenuButton');
-        const closeMobileMenu = document.getElementById('closeMobileMenu');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const body = document.body;
-        
-        // Fungsi untuk membuka menu
-        function openMenu() {
-            mobileMenu.classList.remove('mobile-menu-hidden');
-            mobileMenu.classList.add('mobile-menu-visible');
-            body.classList.add('menu-open');
-        }
-        
-        // Fungsi untuk menutup menu
-        function closeMenu() {
-            mobileMenu.classList.remove('mobile-menu-visible');
-            mobileMenu.classList.add('mobile-menu-hidden');
-            body.classList.remove('menu-open');
-        }
-        
-        // Event listeners
-        mobileMenuButton.addEventListener('click', openMenu);
-        closeMobileMenu.addEventListener('click', closeMenu);
-        
-        // Tutup menu ketika mengklik link navigasi
-        document.querySelectorAll('#mobileMenu a[href^="#"]').forEach(link => {
-            link.addEventListener('click', closeMenu);
-        });
-        
-        // Smooth scrolling untuk semua link
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                const targetElement = document.querySelector(targetId);
-                
-                if (targetElement) {
-                    // Tutup menu mobile jika terbuka
-                    if (mobileMenu.classList.contains('mobile-menu-visible')) {
-                        closeMenu();
-                    }
-                    
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
-</body>
-</html>
+    <!-- Video Section -->
+    <section id="videos" class="py-16 px-6 bg-secondary">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold mb-12 text-center">Video Terbaru</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Video 1 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="relative pb-[56.25%]">
+                        <img src="btf.jpg" alt="Thumbnail Video" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-primary bg-opacity-80 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="https://youtu.be/wo_79qRR0mE?si=8TiSqNZND7foowOO" class="font-bold text-lg mb-2 block hover:text-primary transition">Download pixellab Mod Buterfly | Ful font | Ful preset | Ful sticker | No bug shadow | No password.?</a>
+                        <p class="text-gray-400 text-sm">1.846 x ditonton • 1 bulan yang lalu</p>
+                    </div>
+                </div>
+
+                <!-- Video 2 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="relative pb-[56.25%]">
+                        <img src="dark.jpg" alt="Thumbnail Video" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-primary bg-opacity-80 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="https://youtu.be/wea6C0D8anA?si=mTuEMnahV55ZYSlp" class="font-bold text-lg mb-2 block hover:text-primary transition">Download pixellab Dark mod | Full font | Full preset | Full sticker | No bug shadow | No password..?</a>
+                        <p class="text-gray-400 text-sm">18.387 x ditonton • 2 bulan yang lalu</p>
+                    </div>
+                </div>
+
+                <!-- Video 3 -->
+                <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+                    <div class="relative pb-[56.25%]">
+                        <img src="neon.jpg" alt="Thumbnail Video" class="absolute h-full w-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-primary bg-opacity-80 rounded-full flex items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4">
+                        <a href="https://youtu.be/blxLAxjawME?si=0mV8_1HKWdqxe3IM" class="font-bold text-lg mb-2 block hover:text-primary transition">Download pixellab Mod Neon | Full font || Full preset | Full sticker | No password..??</a>
+                        <p class="text-gray-400 text-sm">5.269 x ditonton • 3 bulan yang lalu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-10">
+                <a href="https://www.youtube.com/@AfynnOfficial/videos" target="_blank" class="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg font-medium transition">
+                    Lihat Semua Video
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-6 bg-dark">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
+                <div class="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-900">
+                    <img src="LOGO AFYNN.jpg" alt="Foto Afynn" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="md:w-2/3 md:pl-12">
+                <h2 class="text-3xl font-bold mb-6">Tentang Saya</h2>
+                <p class="text-lg mb-4">Hai Guys...! Saya Afynn seorang modder aplikasi pixellab. di channel ini membagikan beberapa aplikasi pixellab mod yang bagus untuk keperluan editing kalian</p>
+                <p class="text-lg mb-6">Perjalanan saya di dunia YouTube dimulai sejak masih duduk di bangku MTS. Awalnya hanya sekadar iseng mengunggah video berisi curahan pikiran saya. Namun, titik balik terjadi ketika saya mulai serius membuat konten tutorial aplikasi PixelLab mod.</p>
+                <p class="text-lg mb-6">Konten tersebut ternyata menjadi awal dari personal branding saya yang perlahan mulai dikenal di berbagai platform, mulai dari Facebook hingga TikTok. Kesempatan ini saya manfaatkan untuk terus berkembang dengan menghadirkan konten-konten yang lebih berkualitas dan bermanfaat, serta menjaga konsistensi dalam mengupload video.</p>
+                <p class="text-lg mb-6">Kini, channel YouTube bukan hanya sekadar hobi, tapi juga wadah untuk berbagi pengetahuan dan menginspirasi banyak orang. Setiap video yang saya buat adalah komitmen untuk terus memberikan yang terbaik bagi para subscriber setia.</p>
+                <div class="flex flex-wrap gap-4">
+                    <div class="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                        <span>10.000+ Subscriber</span>
+                    </div>
+                    <div class="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                        <span>500.000+ Total Views</span>
+                    </div>
+                    <div class="flex items-center bg-gray-800 px-4 py-2 rounded-lg">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-primary mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                        </svg>
+                        <span>Video Mingguan</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-6 bg-secondary">
+        <div class="container mx-auto max-w-4xl">
+            <h2 class="text-3xl font-bold mb-12 text-center">Hubungi Saya</h2>
+            <div class="bg-gray-800 rounded-xl p-8 shadow-lg">
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div>
+                            <label for="name" class="block mb-2">Nama Anda</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                    </div>
+                    <div class="mb-6">
+                        <label for="subject" class="block mb-2">Subjek</label>
+                        <input type="text" id="subject" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block mb-2">Pesan</label>
+                        <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-700 border border-gray-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-red-700 text-white py-3 px-6 rounded-lg font-medium transition">
+                        Kirim Pesan
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 px-6">
+        <div class="container mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center">
+                            <img src="LOGO AFYNN.jpg" class="rounded-full" alt="Logo Afynn">
+                        </div>
+                        <h2 class="text-xl font-bold">Afynn Official</h2>
+                    </div>
+                    <p class="mt-4 text-gray-400 max-w-md">Tempat berbagi pixellab mod dan tutorial menarik lainnya</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="https://www.youtube.com/@AfynnOfficial" target="_blank" class="text-gray-400 hover:text-primary transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-primary transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+            
