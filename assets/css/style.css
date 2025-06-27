@@ -1,0 +1,67 @@
+/* Custom styles */
+.marquee {
+    white-space: nowrap;
+    display: inline-block;
+    animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .marquee {
+        animation-duration: 30s;
+    }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* menu */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+}
+
+.dropdown-menu li {
+  display: block;
+  width: 100%;
+}
+
+.group-hover .transform {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Ensure dropdown stays visible when hovering */
+.group:hover .group-hover\:block {
+    display: block;
+}
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
